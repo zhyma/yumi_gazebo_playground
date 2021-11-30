@@ -185,8 +185,8 @@ void YumiHW::registerJointLimits(const std::string& joint_name,
 
     if (urdf_model != NULL)
     {
-	const boost::shared_ptr<const urdf::Joint> urdf_joint = urdf_model->getJoint(joint_name);
-	const boost::shared_ptr<const urdf::Joint> urdf_joint_sitffness = urdf_model->getJoint(joint_name + std::string("_stiffness"));
+	const std::shared_ptr<const urdf::Joint> urdf_joint = urdf_model->getJoint(joint_name);
+	const std::shared_ptr<const urdf::Joint> urdf_joint_sitffness = urdf_model->getJoint(joint_name + std::string("_stiffness"));
 	if (urdf_joint != NULL)
 	{
 	    // Get limits from the URDF file.
