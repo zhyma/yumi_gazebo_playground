@@ -15,7 +15,7 @@
     <arg name="grippers_hardware_interface" default="EffortJointInterface"/>
 
     <!-- URDF / SRDF parameters -->
-    <param name="robot_description" command="$(find xacro)/xacro.py '$(find yumi_description)/urdf/yumi.urdf.xacro' arms_interface:=$(arg arms_hardware_interface) grippers_interface:=$(arg grippers_hardware_interface)" />
+    <param name="robot_description" command="$(find xacro)/xacro '$(find yumi_description)/urdf/yumi.urdf.xacro' arms_interface:=$(arg arms_hardware_interface) grippers_interface:=$(arg grippers_hardware_interface)" />
 
     <!-- Network parameters -->
     <arg name="ip" default="192.168.125.1"/> <!--when talking to the real robot controller -->
