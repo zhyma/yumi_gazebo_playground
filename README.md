@@ -2,8 +2,7 @@ Urdf & Gazebo files for the ABB YuMi (IRB 14000) robot
 
 This is the modified version of [OrebroUniversity/yumi](https://github.com/OrebroUniversity/yumi) to build for ROS Noetic
 
-### Dependencies
-This package depends on ros-industrial which is not released on kinetic yet. So skip step 2 if you have already install ros-industrial.
+### Build
 
 #### Step 1
 Install all of these:
@@ -91,3 +90,14 @@ $ catkin build
 
 #### Step 4
 Finally, `catkin build` the workspace containing the clone of this package.
+
+### Usage
+- `Source ~/devel/setup.bash`
+- Use rViz and Gazebo:
+    `roslaunch yumi_launch yumi_gazebo_pos_control.launch`
+- Use rViz and Moveit! (with default motion planner)
+    `roslaunch yumi_moveit_config demo.launch`
+
+## Note
+- Disable Gazebo GUI: in the launch file (such as yumi_gazebo_pos_control.launch), `<!--Call Gazebo -->` section, change `<arg name="gui" value="true" />`
+    - You can start the GUI by `rosrun gazebo_ros gazebo` manually.
