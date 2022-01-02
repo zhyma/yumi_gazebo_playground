@@ -97,6 +97,10 @@ Finally, `catkin build` the workspace containing the clone of this package.
     `roslaunch yumi_launch yumi_gazebo_pos_control.launch`
 - Use rViz and Moveit! (with default motion planner)
     `roslaunch yumi_moveit_config demo.launch`
+- Use rViz with Moveit! and Gazebo (IK is switched to TracIK. You need to have it installed first.)
+    `roslaunch yumi_launch yumi_gazebo_coil.launch`
+    `roslaunch yumi_moveit_config demo_coil_gazebo.launch`
+
 
 ## Note
 - Disable Gazebo GUI: in the launch file (such as yumi_gazebo_pos_control.launch), `<!--Call Gazebo -->` section, change `<arg name="gui" value="true" />`
