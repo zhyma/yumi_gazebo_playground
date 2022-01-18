@@ -1,0 +1,103 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name="rod">
+    <static>false</static>
+    <self_collide>true</self_collide>
+
+    <joint name="joint_1_world" type="fixed">
+      <pose>0 0 1 0 0 0</pose>
+      <child>link_01</child>
+      <parent>world</parent>
+    </joint>
+
+    <link name='link_01'>
+      <gravity>false</gravity>
+      <pose>0 0 .1 0 0 0</pose>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.2 .02 .02</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>.2 .02 .02</size>
+          </box>
+          <!--<plane>
+            <normal>0 0 1</normal>
+            <size>.4 .2 </size>
+          </plane>-->
+        </geometry>
+      </visual>
+    </link>
+
+
+    <link name="link_02">
+      <gravity>false</gravity>
+      <pose>0.21 0 .1 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>.2 .02 .02</size>
+          </box>
+          <!--<plane>
+            <normal>0 0 1</normal>
+            <size>.1 .1 </size>
+          </plane>-->
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>.2 .02 .02</size>
+          </box>
+          <!--<plane>
+            <normal>0 0 1</normal>
+            <size>.1 .1 </size>
+          </plane>-->
+        </geometry>
+      </visual>
+    </link>
+
+    <joint type="revolute2" name="joint_1_2">
+      <pose>-0.105 0 0 0 0 0</pose>
+      <child>link_02</child>
+      <parent>link_01</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+      <axis2>
+        <xyz>0 0 1</xyz>
+      </axis2>
+    </joint>
+
+    <link name="link_03">
+      <gravity>true</gravity>
+      <pose>0.42 0 0.1 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>.2 .02 .02</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>.2 .02 .02</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+
+    <joint type="ball" name="joint_2_3">
+      <pose>-0.105 0 0 0 0 0</pose>
+      <child>link_03</child>
+      <parent>link_02</parent>
+    </joint>
+
+
+  </model>
+</sdf>

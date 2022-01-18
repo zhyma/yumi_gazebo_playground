@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.5">
+  <model name="rod">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+
+    <joint name="joint_1_world" type="fixed">
+      <pose>0 0 0 0 0 0</pose>
+      <child>link_1</child>
+      <parent>world</parent>
+    </joint>
+
+    <link name="link_1">
+      <gravity>false</gravity>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="link_1_collision">
+        <geometry>
+          <polyline>
+            <point>0.0144 -0.025</point>
+            <point>0.0144 0.025</point>
+            <point>-0.0217 0</point>
+            <height>0.2</height>
+          </polyline>
+        </geometry>
+      </collision>
+      <visual name="link_1_vis">
+        <geometry>
+          <polyline>
+            <point>0.0144 -0.025</point>
+            <point>0.0144 0.025</point>
+            <point>-0.0217 0</point>
+            <height>0.2</height>
+          </polyline>
+        </geometry>
+      </visual>
+      <velocity_decay />
+    </link>
+
+    <link name="link_2">
+      <gravity>false</gravity>
+      <!--<pose>0 0.375 0.213 1.570790 -0.5237 0</pose>-->
+      <pose>0 0.175 0.213 1.570790 -0.5237 0</pose>
+      <collision name="link_2_collision">
+        <geometry>
+          <polyline>
+            <point>0.0144 -0.025</point>
+            <point>0.0144 0.025</point>
+            <point>-0.0217 0</point>
+            <height>0.2</height>
+          </polyline>
+        </geometry>
+      </collision>
+      <visual name="link_2_vis">
+        <geometry>
+          <polyline>
+            <point>0.0144 -0.025</point>
+            <point>0.0144 0.025</point>
+            <point>-0.0217 0</point>
+            <!--<height>0.4</height>-->
+            <height>0.2</height>
+          </polyline>
+        </geometry>
+      </visual>
+      <velocity_decay />
+    </link>
+    
+  </model>
+</sdf>

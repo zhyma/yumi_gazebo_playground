@@ -98,8 +98,10 @@ Finally, `catkin build` the workspace containing the clone of this package.
 - Use rViz and Moveit! (with default motion planner)
     `roslaunch yumi_moveit_config demo.launch`
 - Use rViz with Moveit! and Gazebo (IK is switched to TracIK. You need to have it installed first.)
-    `roslaunch yumi_launch yumi_gazebo_coil.launch`
-    `roslaunch yumi_moveit_config demo_coil_gazebo.launch`
+
+    `roslaunch yumi_launch yumi_gazebo_moveit.launch`
+    
+    `roslaunch yumi_moveit_config demo_gazebo.launch` (empty world)
 
 
 ## Note
