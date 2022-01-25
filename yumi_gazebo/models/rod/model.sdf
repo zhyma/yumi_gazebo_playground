@@ -15,22 +15,16 @@
       <pose>0 0 0 0 0 0</pose>
       <collision name="link_1_collision">
         <geometry>
-          <polyline>
-            <point>0.0144 -0.025</point>
-            <point>0.0144 0.025</point>
-            <point>-0.0217 0</point>
-            <height>0.2</height>
-          </polyline>
+          <box>
+            <size>0.05 0.05 0.2</size>
+          </box>
         </geometry>
       </collision>
       <visual name="link_1_vis">
         <geometry>
-          <polyline>
-            <point>0.0144 -0.025</point>
-            <point>0.0144 0.025</point>
-            <point>-0.0217 0</point>
-            <height>0.2</height>
-          </polyline>
+          <box>
+            <size>0.05 0.05 0.2</size>
+          </box>
         </geometry>
       </visual>
       <velocity_decay />
@@ -39,26 +33,19 @@
     <link name="link_2">
       <gravity>false</gravity>
       <!--<pose>0 0.375 0.213 1.570790 -0.5237 0</pose>-->
-      <pose>0 0.175 0.213 1.570790 -0.5237 0</pose>
+      <pose>0 0.175 0.213 1.570790 0 0</pose>
       <collision name="link_2_collision">
         <geometry>
-          <polyline>
-            <point>0.0144 -0.025</point>
-            <point>0.0144 0.025</point>
-            <point>-0.0217 0</point>
-            <height>0.2</height>
-          </polyline>
+          <box>
+            <size>0.05 0.05 0.2</size>
+          </box>
         </geometry>
       </collision>
       <visual name="link_2_vis">
         <geometry>
-          <polyline>
-            <point>0.0144 -0.025</point>
-            <point>0.0144 0.025</point>
-            <point>-0.0217 0</point>
-            <!--<height>0.4</height>-->
-            <height>0.2</height>
-          </polyline>
+          <box>
+            <size>0.05 0.05 0.2</size>
+          </box>
         </geometry>
       </visual>
       <velocity_decay />

@@ -7,6 +7,7 @@ from xml.etree.ElementTree import SubElement
 from xml.etree.ElementTree import ElementTree
 
 from xml_utility import prettify, SubElementText, l2s
+from math import pi as pi
 
 class cable_creator():
     def __init__(self, section_vol):
@@ -24,6 +25,32 @@ class cable_creator():
         link = SubElement(self.model, 'link', {'name':'link_' + str(no)})
         SubElementText(link, 'gravity', _text = 'true')
         SubElementText(link, 'pose', _text = l2s(pose))
+
+        # add inertial section
+        inertial = SubElement(link, 'inertial')
+        rho = 8.96*1000 # suppose we are using copper, 8.96g/cm^3
+        mass = self.vol[0]*pi*(self.vol[1]/2)**2*rho
+        SubElementText(inertial, 'mass', _text = str(mass))
+        # "inertia" is inside of "inertial"
+        inertia = SubElement(inertial, 'inertia')
+        # Solid cylinder of radius r, height h and mass m
+        # ixx=(ml^2)/3, ixy=0, ixz=0, iyy=0, iyz=0, izz=(ml^2)/3
+        # taking a long box as a long rod (along x axis)
+        # the first element is the length of the boxy stick or the rod
+        h = self.vol[0]
+        r = self.vol[1]/2
+        ir = mass*(3*r*r+h*h)/12
+        ih = mass*r*r/2
+        SubElementText(inertia, 'ixx', _text = str(ih))
+        SubElementText(inertia, 'ixy', _text = '0')
+        SubElementText(inertia, 'ixz', _text = '0')
+        SubElementText(inertia, 'iyy', _text = str(ir))
+        SubElementText(inertia, 'iyz', _text = '0')
+        SubElementText(inertia, 'izz', _text = str(ir))
+
+        # print(mass, end=', ')
+        # print(self.vol[0], end = ',')
+        # print(i_val)
         
         # add collision section
         collision = SubElement(link, 'collision', {'name':'link_' + str(no) + '_collision'})
@@ -31,12 +58,23 @@ class cable_creator():
         # volume is either a cylinder, a box, a triangular, etc...
         vol_collision = SubElement(geo_collision, style)
         SubElementText(vol_collision, 'size', _text = l2s(self.vol))
+        # surface = SubElement(collision, 'surface')
+        # friction = SubElement(surface, 'friction')
+        # ode = SubElement(friction, 'ode')
+        # mu = 0.5
+        # SubElementText(ode, 'mu', _text=str(mu))
+        # SubElementText(ode, 'mu2', _text=str(mu))
+
 
         # add visual section
         visual = SubElement(link, 'visual', {'name':'link_' + str(no) + '_visual'})
         geo_visual = SubElement(visual, 'geometry')
         vol_visual = SubElement(geo_visual, style)
         SubElementText(vol_visual, 'size', _text = l2s(self.vol))
+        material = SubElement(geo_visual, 'material')
+        script = SubElement(material, 'script')
+        SubElementText(script, 'uri', _text = 'file://media/materials/scripts/gazebo.material')
+        SubElementText(script, 'name', _text = 'Gazebo/Green')
 
     def add_joint(self, no):
         # define two sphere with joints attached to each of them.
@@ -45,6 +83,22 @@ class cable_creator():
         SubElementText(joint, 'pose', _text = l2s(offset))
         SubElementText(joint, 'child', _text = 'link_' + str(no))
         SubElementText(joint, 'parent', _text = 'link_' + str(no-1))
+        damping = 10
+        friction = 5
+        axis = SubElement(joint, 'axis')
+        dynamics = SubElement(axis, 'dynamics')
+        SubElementText(dynamics, 'damping', _text = str(damping))
+        SubElementText(dynamics, 'friction', _text = str(friction))
+        # limit = SubElement(axis, 'limit')
+        # SubElementText(limit, 'lower', _text = str(-pi/2))
+        # SubElementText(limit, 'upper', _text = str(pi/2))
+        axis2 = SubElement(joint, 'axis')
+        dynamics2 = SubElementText(axis2, 'dynamics')
+        SubElementText(dynamics2, 'damping', _text = str(damping))
+        SubElementText(dynamics2, 'friction', _text = str(friction))
+        # limit2 = SubElement(axis2, 'limit')
+        # SubElementText(limit2, 'lower', _text = str(-pi/2))
+        # SubElementText(limit2, 'upper', _text = str(pi/2))
 
     def create_xml(self, n):
         # pose = SubElement(model, 'pose')
@@ -70,5 +124,7 @@ class cable_creator():
         tree.write('model.sdf', encoding = 'utf-8', xml_declaration = True)
 
 if __name__ == '__main__':
-    creator = cable_creator([0.02, 0.005, 0.005])
+    # [x, y, z], y=z\approx estimated radians
+    # use boxes to replace cylinders
+    creator = cable_creator([0.04, 0.01, 0.01])
     creator.create_xml(50)
