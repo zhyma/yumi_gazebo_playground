@@ -71,34 +71,35 @@ class cable_creator():
         geo_visual = SubElement(visual, 'geometry')
         vol_visual = SubElement(geo_visual, style)
         SubElementText(vol_visual, 'size', _text = l2s(self.vol))
-        material = SubElement(geo_visual, 'material')
+        material = SubElement(visual, 'material')
         script = SubElement(material, 'script')
         SubElementText(script, 'uri', _text = 'file://media/materials/scripts/gazebo.material')
         SubElementText(script, 'name', _text = 'Gazebo/Green')
 
     def add_joint(self, no):
         # define two sphere with joints attached to each of them.
-        joint = SubElement(self.model, 'joint', {'type':'ball', 'name':'joint_' + str(no-1) + '_' + str(no)})
+        joint = SubElement(self.model, 'joint', {'type':'universal', 'name':'joint_' + str(no-1) + '_' + str(no)})
         offset = [-self.vol[0]/2, 0, 0, 0, 0, 0]
         SubElementText(joint, 'pose', _text = l2s(offset))
         SubElementText(joint, 'child', _text = 'link_' + str(no))
         SubElementText(joint, 'parent', _text = 'link_' + str(no-1))
-        damping = 10
-        friction = 5
-        axis = SubElement(joint, 'axis')
-        dynamics = SubElement(axis, 'dynamics')
-        SubElementText(dynamics, 'damping', _text = str(damping))
-        SubElementText(dynamics, 'friction', _text = str(friction))
+        # damping = 0.5
+        # friction = 0.5
+        # axis = SubElement(joint, 'axis')
+        # SubElementText(axis, 'xyz', _text='0 0 1')
+        # dynamics = SubElement(axis, 'dynamics')
+        # SubElementText(dynamics, 'damping', _text = str(damping))
+        # SubElementText(dynamics, 'friction', _text = str(friction))
         # limit = SubElement(axis, 'limit')
         # SubElementText(limit, 'lower', _text = str(-pi/2))
         # SubElementText(limit, 'upper', _text = str(pi/2))
-        axis2 = SubElement(joint, 'axis')
-        dynamics2 = SubElementText(axis2, 'dynamics')
-        SubElementText(dynamics2, 'damping', _text = str(damping))
-        SubElementText(dynamics2, 'friction', _text = str(friction))
-        # limit2 = SubElement(axis2, 'limit')
-        # SubElementText(limit2, 'lower', _text = str(-pi/2))
-        # SubElementText(limit2, 'upper', _text = str(pi/2))
+        # axis2 = SubElement(joint, 'axis2')
+        # dynamics2 = SubElementText(axis2, 'dynamics')
+        # SubElementText(dynamics2, 'damping', _text = str(damping))
+        # SubElementText(dynamics2, 'friction', _text = str(friction))
+        # # limit2 = SubElement(axis2, 'limit')
+        # # SubElementText(limit2, 'lower', _text = str(-pi/2))
+        # # SubElementText(limit2, 'upper', _text = str(pi/2))
 
     def create_xml(self, n):
         # pose = SubElement(model, 'pose')
@@ -108,10 +109,10 @@ class cable_creator():
 
         # a section is cylinder*1+sphere*2 (use 2 joints to create a universal one)
         self.add_section(0, [0]*6)
-        joint = SubElementText(self.model, 'joint', {'name':'joint_0_world', 'type':'fixed'})
-        SubElementText(joint, 'pose', _text=l2s([0]*6))
-        SubElementText(joint, 'child', _text='link_0')
-        SubElementText(joint, 'parent', _text='world')
+        # joint = SubElementText(self.model, 'joint', {'name':'joint_0_world', 'type':'fixed'})
+        # SubElementText(joint, 'pose', _text=l2s([0]*6))
+        # SubElementText(joint, 'child', _text='link_0')
+        # SubElementText(joint, 'parent', _text='world')
         for i in range(1,n):
             self.add_section(i, [self.vol[0]*i, 0, 0, 0, 0, 0])
             self.add_joint(i)

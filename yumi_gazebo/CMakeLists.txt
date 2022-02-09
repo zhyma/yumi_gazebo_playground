@@ -1,23 +1,60 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(yumi_gazebo)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
+# Check for c++11 / c++0x support
+include(CheckCXXCompilerFlag)
+CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+if(COMPILER_SUPPORTS_CXX11)
+    set(CMAKE_CXX_FLAGS "-std=c++11")
+elseif(COMPILER_SUPPORTS_CXX0X)
+    set(CMAKE_CXX_FLAGS "-std=c++0x")
+else()
+    message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
+endif()
+
+# Load catkin and all dependencies required for this package
+# cannot have yumi_hw, not sure why
 find_package(catkin REQUIRED COMPONENTS
   yumi_description
-  yumi_hw
   yumi_moveit_config
   yumi_support
+  roscpp
+  gazebo_ros
+  std_msgs
+  message_generation
+)
+
+# Depend on system install of Gazebo
+find_package(gazebo REQUIRED)
+
+link_directories(${GAZEBO_LIBRARY_DIRS})
+include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
+
+add_message_files(
+  FILES
+    CylinderProperties.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+    std_msgs
 )
 
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES yumi_launch
-  CATKIN_DEPENDS yumi_description yumi_hw yumi_moveit_config yumi_support
-#  DEPENDS system_lib
+  DEPENDS
+    roscpp
+    gazebo_ros
+  CATKIN_DEPENDS
+    message_runtime
+    yumi_description
+    yumi_hw
+    yumi_moveit_config
+    yumi_support
 )
 
+add_library(${PROJECT_NAME} src/plugin.cpp)
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
 #############
 ## Install ##
@@ -27,16 +64,3 @@ catkin_package(
 install(DIRECTORY launch/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
-
-#############
-## Testing ##
-#############
-
-## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_yumi_launch.cpp)
-# if(TARGET ${PROJECT_NAME}-test)
-#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
-# endif()
-
-## Add folders to be run by python nosetests
-# catkin_add_nosetests(test)
