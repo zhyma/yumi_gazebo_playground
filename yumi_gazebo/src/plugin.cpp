@@ -231,12 +231,16 @@ namespace gazebo
             // publish link pose and states
             CylinderProperties msg;
             ignition::math::Pose3d pose = link->WorldPose();
-            ignition::math::Vector3<double> position = pose.Pos();
+            // ignition::math::Vector3<double> position = pose.Pos();
 
             // x, y, z, radius, length
-            msg.x = position.X();
-            msg.y = position.Y();
-            msg.z = position.Z();
+            msg.position.x = pose.Pos().X();
+            msg.position.y = pose.Pos().Y();
+            msg.position.z = pose.Pos().Z();
+            msg.orientation.x = pose.Rot().X();
+            msg.orientation.y = pose.Rot().Y();
+            msg.orientation.z = pose.Rot().Z();
+            msg.orientation.w = pose.Rot().W();
             msg.r = cylinder->GetRadius();
             msg.l = cylinder->GetLength();
             properties_pub.publish(msg);
@@ -304,9 +308,9 @@ namespace gazebo
 
       void properties_callback(const CylinderProperties::ConstPtr& msg)
       {
-        this->properties[0] = msg->x;
-        this->properties[1] = msg->y;
-        this->properties[2] = msg->z;
+        this->properties[0] = msg->position.x;
+        this->properties[1] = msg->position.y;
+        this->properties[2] = msg->position.z;
         this->properties[3] = msg->r;
         this->properties[4] = msg->l;
         new_properties = true;
