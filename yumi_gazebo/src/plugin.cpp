@@ -90,7 +90,8 @@ namespace gazebo
         // Pose to initialize the model to
         msgs::Set(msg.mutable_pose(),
             ignition::math::Pose3d(
-              ignition::math::Vector3d(0.2-0.6, 0, 0.2+0.1),
+              // ignition::math::Vector3d(0.2-0.6, 0, 0.2+0.1),
+              ignition::math::Vector3d(0.2-0.1, 0, 0.2+0.1),
               ignition::math::Quaterniond(0, 0, 0)));
 
         // Send the message
@@ -210,7 +211,7 @@ namespace gazebo
           // Pose to initialize the model to
           msgs::Set(msg.mutable_pose(),
               ignition::math::Pose3d(
-                ignition::math::Vector3d(properties[0]-0.4, properties[1], properties[2]+properties[3]+0.03),
+                ignition::math::Vector3d(properties[0]-0.2, properties[1], properties[2]+properties[3]+0.03),
                 ignition::math::Quaterniond(0, 0, 0)));
           factPub->Publish(msg);
 

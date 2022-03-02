@@ -28,7 +28,13 @@ class cable_creator():
 
         # add inertial section
         inertial = SubElement(link, 'inertial')
-        rho = 8.96*1000 # suppose we are using copper, 8.96g/cm^3
+        if no == 0:
+            # The first section is a counterweight, 
+            # which is much heavier than other parts
+            rho = 20*8.96*1000
+        else:
+            # suppose we are using copper, 8.96g/cm^3
+            rho = 8.96*1000 
         mass = self.vol[0]*pi*(self.vol[1]/2)**2*rho
         SubElementText(inertial, 'mass', _text = str(mass))
         # "inertia" is inside of "inertial"

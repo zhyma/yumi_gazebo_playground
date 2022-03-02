@@ -7,14 +7,14 @@
       <gravity>true</gravity>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.5629734035232912</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>7.0371675440411405e-06</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>7.858170424179273e-05</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>7.858170424179273e-05</izz>
         </inertia>
       </inertial>
       <collision name="link_0_collision">
