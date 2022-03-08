@@ -31,7 +31,7 @@ class cable_creator():
         if no == 0:
             # The first section is a counterweight, 
             # which is much heavier than other parts
-            rho = 20*8.96*1000
+            rho = 50*8.96*1000
         else:
             # suppose we are using copper, 8.96g/cm^3
             rho = 8.96*1000 
