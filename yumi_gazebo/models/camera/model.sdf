@@ -46,7 +46,7 @@
     </link>
     
     <link name='camera_2'>
-      <pose>0.3 1 0.3 0 0 4.7123889</pose>
+      <pose>0.3 0 1 0 1.5707963 0</pose>
       <visual name='visual'>
         <geometry>
           <box>
