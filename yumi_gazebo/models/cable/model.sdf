@@ -7,27 +7,27 @@
       <gravity>true</gravity>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
-        <mass>1.4074335088082277</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>1.7592918860102847e-05</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00019645426060448177</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>0.00019645426060448177</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_0_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_0_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -40,29 +40,29 @@
     </link>
     <link name="link_1">
       <gravity>true</gravity>
-      <pose>0.04 0 0 0 0 0</pose>
+      <pose>0.01 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_1_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_1_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -74,35 +74,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_0_1">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_1</child>
       <parent>link_0</parent>
     </joint>
     <link name="link_2">
       <gravity>true</gravity>
-      <pose>0.08 0 0 0 0 0</pose>
+      <pose>0.02 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_2_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_2_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -114,35 +114,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_1_2">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_2</child>
       <parent>link_1</parent>
     </joint>
     <link name="link_3">
       <gravity>true</gravity>
-      <pose>0.12 0 0 0 0 0</pose>
+      <pose>0.03 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_3_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_3_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -154,35 +154,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_2_3">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_3</child>
       <parent>link_2</parent>
     </joint>
     <link name="link_4">
       <gravity>true</gravity>
-      <pose>0.16 0 0 0 0 0</pose>
+      <pose>0.04 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_4_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_4_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -194,35 +194,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_3_4">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_4</child>
       <parent>link_3</parent>
     </joint>
     <link name="link_5">
       <gravity>true</gravity>
-      <pose>0.2 0 0 0 0 0</pose>
+      <pose>0.05 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_5_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_5_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -234,35 +234,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_4_5">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_5</child>
       <parent>link_4</parent>
     </joint>
     <link name="link_6">
       <gravity>true</gravity>
-      <pose>0.24 0 0 0 0 0</pose>
+      <pose>0.06 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_6_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_6_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -274,35 +274,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_5_6">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_6</child>
       <parent>link_5</parent>
     </joint>
     <link name="link_7">
       <gravity>true</gravity>
-      <pose>0.28 0 0 0 0 0</pose>
+      <pose>0.07 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_7_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_7_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -314,35 +314,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_6_7">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_7</child>
       <parent>link_6</parent>
     </joint>
     <link name="link_8">
       <gravity>true</gravity>
-      <pose>0.32 0 0 0 0 0</pose>
+      <pose>0.08 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_8_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_8_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -354,35 +354,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_7_8">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_8</child>
       <parent>link_7</parent>
     </joint>
     <link name="link_9">
       <gravity>true</gravity>
-      <pose>0.36 0 0 0 0 0</pose>
+      <pose>0.09 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_9_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_9_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -394,35 +394,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_8_9">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_9</child>
       <parent>link_8</parent>
     </joint>
     <link name="link_10">
       <gravity>true</gravity>
-      <pose>0.4 0 0 0 0 0</pose>
+      <pose>0.1 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_10_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_10_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -434,35 +434,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_9_10">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_10</child>
       <parent>link_9</parent>
     </joint>
     <link name="link_11">
       <gravity>true</gravity>
-      <pose>0.44 0 0 0 0 0</pose>
+      <pose>0.11 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_11_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_11_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -474,35 +474,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_10_11">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_11</child>
       <parent>link_10</parent>
     </joint>
     <link name="link_12">
       <gravity>true</gravity>
-      <pose>0.48 0 0 0 0 0</pose>
+      <pose>0.12 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_12_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_12_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -514,35 +514,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_11_12">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_12</child>
       <parent>link_11</parent>
     </joint>
     <link name="link_13">
       <gravity>true</gravity>
-      <pose>0.52 0 0 0 0 0</pose>
+      <pose>0.13 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_13_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_13_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -554,35 +554,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_12_13">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_13</child>
       <parent>link_12</parent>
     </joint>
     <link name="link_14">
       <gravity>true</gravity>
-      <pose>0.56 0 0 0 0 0</pose>
+      <pose>0.14 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_14_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_14_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -594,35 +594,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_13_14">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_14</child>
       <parent>link_13</parent>
     </joint>
     <link name="link_15">
       <gravity>true</gravity>
-      <pose>0.6 0 0 0 0 0</pose>
+      <pose>0.15 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_15_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_15_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -634,35 +634,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_14_15">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_15</child>
       <parent>link_14</parent>
     </joint>
     <link name="link_16">
       <gravity>true</gravity>
-      <pose>0.64 0 0 0 0 0</pose>
+      <pose>0.16 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_16_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_16_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -674,35 +674,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_15_16">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_16</child>
       <parent>link_15</parent>
     </joint>
     <link name="link_17">
       <gravity>true</gravity>
-      <pose>0.68 0 0 0 0 0</pose>
+      <pose>0.17 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_17_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_17_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -714,35 +714,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_16_17">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_17</child>
       <parent>link_16</parent>
     </joint>
     <link name="link_18">
       <gravity>true</gravity>
-      <pose>0.72 0 0 0 0 0</pose>
+      <pose>0.18 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_18_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_18_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -754,35 +754,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_17_18">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_18</child>
       <parent>link_17</parent>
     </joint>
     <link name="link_19">
       <gravity>true</gravity>
-      <pose>0.76 0 0 0 0 0</pose>
+      <pose>0.19 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_19_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_19_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -794,35 +794,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_18_19">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_19</child>
       <parent>link_18</parent>
     </joint>
     <link name="link_20">
       <gravity>true</gravity>
-      <pose>0.8 0 0 0 0 0</pose>
+      <pose>0.2 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_20_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_20_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -834,35 +834,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_19_20">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_20</child>
       <parent>link_19</parent>
     </joint>
     <link name="link_21">
       <gravity>true</gravity>
-      <pose>0.84 0 0 0 0 0</pose>
+      <pose>0.21 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_21_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_21_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -874,35 +874,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_20_21">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_21</child>
       <parent>link_20</parent>
     </joint>
     <link name="link_22">
       <gravity>true</gravity>
-      <pose>0.88 0 0 0 0 0</pose>
+      <pose>0.22 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_22_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_22_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -914,35 +914,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_21_22">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_22</child>
       <parent>link_21</parent>
     </joint>
     <link name="link_23">
       <gravity>true</gravity>
-      <pose>0.92 0 0 0 0 0</pose>
+      <pose>0.23 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_23_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_23_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -954,35 +954,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_22_23">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_23</child>
       <parent>link_22</parent>
     </joint>
     <link name="link_24">
       <gravity>true</gravity>
-      <pose>0.96 0 0 0 0 0</pose>
+      <pose>0.24 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_24_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_24_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -994,35 +994,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_23_24">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_24</child>
       <parent>link_23</parent>
     </joint>
     <link name="link_25">
       <gravity>true</gravity>
-      <pose>1.0 0 0 0 0 0</pose>
+      <pose>0.25 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_25_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_25_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1034,35 +1034,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_24_25">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_25</child>
       <parent>link_24</parent>
     </joint>
     <link name="link_26">
       <gravity>true</gravity>
-      <pose>1.04 0 0 0 0 0</pose>
+      <pose>0.26 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_26_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_26_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1074,35 +1074,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_25_26">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_26</child>
       <parent>link_25</parent>
     </joint>
     <link name="link_27">
       <gravity>true</gravity>
-      <pose>1.08 0 0 0 0 0</pose>
+      <pose>0.27 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_27_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_27_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1114,35 +1114,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_26_27">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_27</child>
       <parent>link_26</parent>
     </joint>
     <link name="link_28">
       <gravity>true</gravity>
-      <pose>1.12 0 0 0 0 0</pose>
+      <pose>0.28 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_28_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_28_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1154,35 +1154,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_27_28">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_28</child>
       <parent>link_27</parent>
     </joint>
     <link name="link_29">
       <gravity>true</gravity>
-      <pose>1.16 0 0 0 0 0</pose>
+      <pose>0.29 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_29_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_29_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1194,35 +1194,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_28_29">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_29</child>
       <parent>link_28</parent>
     </joint>
     <link name="link_30">
       <gravity>true</gravity>
-      <pose>1.2 0 0 0 0 0</pose>
+      <pose>0.3 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_30_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_30_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1234,35 +1234,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_29_30">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_30</child>
       <parent>link_29</parent>
     </joint>
     <link name="link_31">
       <gravity>true</gravity>
-      <pose>1.24 0 0 0 0 0</pose>
+      <pose>0.31 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_31_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_31_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1274,35 +1274,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_30_31">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_31</child>
       <parent>link_30</parent>
     </joint>
     <link name="link_32">
       <gravity>true</gravity>
-      <pose>1.28 0 0 0 0 0</pose>
+      <pose>0.32 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_32_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_32_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1314,35 +1314,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_31_32">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_32</child>
       <parent>link_31</parent>
     </joint>
     <link name="link_33">
       <gravity>true</gravity>
-      <pose>1.32 0 0 0 0 0</pose>
+      <pose>0.33 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_33_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_33_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1354,35 +1354,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_32_33">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_33</child>
       <parent>link_32</parent>
     </joint>
     <link name="link_34">
       <gravity>true</gravity>
-      <pose>1.36 0 0 0 0 0</pose>
+      <pose>0.34 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_34_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_34_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1394,35 +1394,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_33_34">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_34</child>
       <parent>link_33</parent>
     </joint>
     <link name="link_35">
       <gravity>true</gravity>
-      <pose>1.4000000000000001 0 0 0 0 0</pose>
+      <pose>0.35000000000000003 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_35_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_35_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1434,35 +1434,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_34_35">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_35</child>
       <parent>link_34</parent>
     </joint>
     <link name="link_36">
       <gravity>true</gravity>
-      <pose>1.44 0 0 0 0 0</pose>
+      <pose>0.36 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_36_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_36_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1474,35 +1474,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_35_36">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_36</child>
       <parent>link_35</parent>
     </joint>
     <link name="link_37">
       <gravity>true</gravity>
-      <pose>1.48 0 0 0 0 0</pose>
+      <pose>0.37 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_37_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_37_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1514,35 +1514,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_36_37">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_37</child>
       <parent>link_36</parent>
     </joint>
     <link name="link_38">
       <gravity>true</gravity>
-      <pose>1.52 0 0 0 0 0</pose>
+      <pose>0.38 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_38_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_38_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1554,35 +1554,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_37_38">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_38</child>
       <parent>link_37</parent>
     </joint>
     <link name="link_39">
       <gravity>true</gravity>
-      <pose>1.56 0 0 0 0 0</pose>
+      <pose>0.39 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_39_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_39_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1594,35 +1594,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_38_39">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_39</child>
       <parent>link_38</parent>
     </joint>
     <link name="link_40">
       <gravity>true</gravity>
-      <pose>1.6 0 0 0 0 0</pose>
+      <pose>0.4 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_40_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_40_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1634,35 +1634,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_39_40">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_40</child>
       <parent>link_39</parent>
     </joint>
     <link name="link_41">
       <gravity>true</gravity>
-      <pose>1.6400000000000001 0 0 0 0 0</pose>
+      <pose>0.41000000000000003 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_41_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_41_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1674,35 +1674,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_40_41">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_41</child>
       <parent>link_40</parent>
     </joint>
     <link name="link_42">
       <gravity>true</gravity>
-      <pose>1.68 0 0 0 0 0</pose>
+      <pose>0.42 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_42_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_42_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1714,35 +1714,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_41_42">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_42</child>
       <parent>link_41</parent>
     </joint>
     <link name="link_43">
       <gravity>true</gravity>
-      <pose>1.72 0 0 0 0 0</pose>
+      <pose>0.43 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_43_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_43_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1754,35 +1754,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_42_43">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_43</child>
       <parent>link_42</parent>
     </joint>
     <link name="link_44">
       <gravity>true</gravity>
-      <pose>1.76 0 0 0 0 0</pose>
+      <pose>0.44 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_44_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_44_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1794,35 +1794,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_43_44">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_44</child>
       <parent>link_43</parent>
     </joint>
     <link name="link_45">
       <gravity>true</gravity>
-      <pose>1.8 0 0 0 0 0</pose>
+      <pose>0.45 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_45_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_45_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1834,35 +1834,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_44_45">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_45</child>
       <parent>link_44</parent>
     </joint>
     <link name="link_46">
       <gravity>true</gravity>
-      <pose>1.84 0 0 0 0 0</pose>
+      <pose>0.46 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_46_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_46_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1874,35 +1874,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_45_46">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_46</child>
       <parent>link_45</parent>
     </joint>
     <link name="link_47">
       <gravity>true</gravity>
-      <pose>1.8800000000000001 0 0 0 0 0</pose>
+      <pose>0.47000000000000003 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_47_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_47_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1914,35 +1914,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_46_47">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_47</child>
       <parent>link_46</parent>
     </joint>
     <link name="link_48">
       <gravity>true</gravity>
-      <pose>1.92 0 0 0 0 0</pose>
+      <pose>0.48 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_48_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_48_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1954,35 +1954,35 @@
       </visual>
     </link>
     <joint type="universal" name="joint_47_48">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_48</child>
       <parent>link_47</parent>
     </joint>
     <link name="link_49">
       <gravity>true</gravity>
-      <pose>1.96 0 0 0 0 0</pose>
+      <pose>0.49 0 0 0 0 0</pose>
       <inertial>
-        <mass>0.028148670176164552</mass>
+        <mass>0.0017592918860102845</mass>
         <inertia>
-          <ixx>3.518583772020569e-07</ixx>
+          <ixx>5.497787143782139e-09</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>3.929085212089636e-06</iyy>
+          <iyy>1.740965928864344e-08</iyy>
           <iyz>0</iyz>
-          <izz>3.929085212089636e-06</izz>
+          <izz>1.740965928864344e-08</izz>
         </inertia>
       </inertial>
       <collision name="link_49_collision">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
       </collision>
       <visual name="link_49_visual">
         <geometry>
           <box>
-            <size>0.04 0.01 0.01</size>
+            <size>0.01 0.005 0.005</size>
           </box>
         </geometry>
         <material>
@@ -1994,9 +1994,809 @@
       </visual>
     </link>
     <joint type="universal" name="joint_48_49">
-      <pose>-0.02 0 0 0 0 0</pose>
+      <pose>-0.005 0 0 0 0 0</pose>
       <child>link_49</child>
       <parent>link_48</parent>
+    </joint>
+    <link name="link_50">
+      <gravity>true</gravity>
+      <pose>0.5 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_50_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_50_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_49_50">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_50</child>
+      <parent>link_49</parent>
+    </joint>
+    <link name="link_51">
+      <gravity>true</gravity>
+      <pose>0.51 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_51_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_51_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_50_51">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_51</child>
+      <parent>link_50</parent>
+    </joint>
+    <link name="link_52">
+      <gravity>true</gravity>
+      <pose>0.52 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_52_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_52_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_51_52">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_52</child>
+      <parent>link_51</parent>
+    </joint>
+    <link name="link_53">
+      <gravity>true</gravity>
+      <pose>0.53 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_53_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_53_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_52_53">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_53</child>
+      <parent>link_52</parent>
+    </joint>
+    <link name="link_54">
+      <gravity>true</gravity>
+      <pose>0.54 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_54_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_54_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_53_54">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_54</child>
+      <parent>link_53</parent>
+    </joint>
+    <link name="link_55">
+      <gravity>true</gravity>
+      <pose>0.55 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_55_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_55_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_54_55">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_55</child>
+      <parent>link_54</parent>
+    </joint>
+    <link name="link_56">
+      <gravity>true</gravity>
+      <pose>0.56 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_56_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_56_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_55_56">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_56</child>
+      <parent>link_55</parent>
+    </joint>
+    <link name="link_57">
+      <gravity>true</gravity>
+      <pose>0.5700000000000001 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_57_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_57_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_56_57">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_57</child>
+      <parent>link_56</parent>
+    </joint>
+    <link name="link_58">
+      <gravity>true</gravity>
+      <pose>0.58 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_58_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_58_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_57_58">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_58</child>
+      <parent>link_57</parent>
+    </joint>
+    <link name="link_59">
+      <gravity>true</gravity>
+      <pose>0.59 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_59_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_59_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_58_59">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_59</child>
+      <parent>link_58</parent>
+    </joint>
+    <link name="link_60">
+      <gravity>true</gravity>
+      <pose>0.6 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_60_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_60_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_59_60">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_60</child>
+      <parent>link_59</parent>
+    </joint>
+    <link name="link_61">
+      <gravity>true</gravity>
+      <pose>0.61 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_61_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_61_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_60_61">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_61</child>
+      <parent>link_60</parent>
+    </joint>
+    <link name="link_62">
+      <gravity>true</gravity>
+      <pose>0.62 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_62_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_62_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_61_62">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_62</child>
+      <parent>link_61</parent>
+    </joint>
+    <link name="link_63">
+      <gravity>true</gravity>
+      <pose>0.63 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_63_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_63_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_62_63">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_63</child>
+      <parent>link_62</parent>
+    </joint>
+    <link name="link_64">
+      <gravity>true</gravity>
+      <pose>0.64 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_64_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_64_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_63_64">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_64</child>
+      <parent>link_63</parent>
+    </joint>
+    <link name="link_65">
+      <gravity>true</gravity>
+      <pose>0.65 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_65_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_65_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_64_65">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_65</child>
+      <parent>link_64</parent>
+    </joint>
+    <link name="link_66">
+      <gravity>true</gravity>
+      <pose>0.66 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_66_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_66_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_65_66">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_66</child>
+      <parent>link_65</parent>
+    </joint>
+    <link name="link_67">
+      <gravity>true</gravity>
+      <pose>0.67 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_67_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_67_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_66_67">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_67</child>
+      <parent>link_66</parent>
+    </joint>
+    <link name="link_68">
+      <gravity>true</gravity>
+      <pose>0.68 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_68_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_68_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_67_68">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_68</child>
+      <parent>link_67</parent>
+    </joint>
+    <link name="link_69">
+      <gravity>true</gravity>
+      <pose>0.6900000000000001 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0017592918860102845</mass>
+        <inertia>
+          <ixx>5.497787143782139e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.740965928864344e-08</iyy>
+          <iyz>0</iyz>
+          <izz>1.740965928864344e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name="link_69_collision">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="link_69_visual">
+        <geometry>
+          <box>
+            <size>0.01 0.005 0.005</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint type="universal" name="joint_68_69">
+      <pose>-0.005 0 0 0 0 0</pose>
+      <child>link_69</child>
+      <parent>link_68</parent>
     </joint>
   </model>
 </sdf>

@@ -31,7 +31,8 @@ class cable_creator():
         if no == 0:
             # The first section is a counterweight, 
             # which is much heavier than other parts
-            rho = 50*8.96*1000
+            # rho = 50*8.96*1000
+            rho = 8.96*1000
         else:
             # suppose we are using copper, 8.96g/cm^3
             rho = 8.96*1000 
@@ -133,5 +134,5 @@ class cable_creator():
 if __name__ == '__main__':
     # [x, y, z], y=z\approx estimated radians
     # use boxes to replace cylinders
-    creator = cable_creator([0.04, 0.01, 0.01])
-    creator.create_xml(50)
+    creator = cable_creator([0.01, 0.005, 0.005])
+    creator.create_xml(70)
